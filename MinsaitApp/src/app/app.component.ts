@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
   constructor() { }
 
   ngOnInit(): void {
-    this.title.setTitle('IPZS - Home');
+    this.title.setTitle('Minsait Apps');
   }
 
   showScrollButton = false;

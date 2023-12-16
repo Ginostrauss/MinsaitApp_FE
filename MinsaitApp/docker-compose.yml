@@ -1,0 +1,10 @@
+version: '3'
+services:
+  webapp:
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
