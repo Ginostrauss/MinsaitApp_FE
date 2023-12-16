@@ -1,14 +1,31 @@
-<div class="row align-items-center">
-  <div class="col-md-auto m-0 p-0">
-    <a class="navbar-brand" href="#">
-      <img
-        alt="Logo"
-        class="d-inline-block align-text-center" height="50" src="https://via.placeholder.com/200x50" width="200">
-    </a>
+<header class="navbar sticky-top bg-primary f p-0">
+  <div class="row align-items-center">
+    <!-- Div del Logo -->
+    <div class="col-md-auto">
+      <a class="navbar-brand" href="#">
+        <img alt="Logo" class="d-inline-block align-text-center" height="auto" src="https://via.placeholder.com/200x50" width="auto">
+      </a>
+    </div>
+
+    <!-- Div dei contenuti a destra -->
+    <div class="col ">
+      <!-- Utilizzo della classe 'row' per impilare verticalmente i due div -->
+      <div class="row">
+        <!-- Primo div a destra (Intranet) -->
+        <div class="col-12">
+          <nav class="navbar bg-primary">
+            <h2 class="text-white">Intranet</h2> <!-- Ridotto a h2 e margin-bottom a 0 -->
+          </nav>
+        </div>
+
+        <!-- Secondo div a destra (homepage) -->
+        <div class="col-12">
+          <nav class="navbar bg-primary">
+            <small class="text-white">homepage</small> <!-- Utilizzo di 'small' per ridurre il font -->
+          </nav>
+        </div>
+
+      </div>
+    </div>
   </div>
-  <div class="col m-0 p-0">
-    <nav class="navbar bg-primary">
-      <h1 class="text-white">Intranet</h1>
-    </nav>
-  </div>
-</div>
+</header>
