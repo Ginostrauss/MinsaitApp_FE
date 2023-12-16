@@ -11,12 +11,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import {RouterModule} from "@angular/router";
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
 @NgModule({
   declarations: [
 
+
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +38,8 @@ import {RouterModule} from "@angular/router";
   ],
   exports: [
 
-    RouterModule
+    RouterModule,
+    NavbarComponent
   ]
 })
 export class SharedModule {
