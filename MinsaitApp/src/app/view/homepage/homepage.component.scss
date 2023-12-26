@@ -1,3 +1,7 @@
-.mat-form-field {
-  margin-right: 12px;
+@media (min-width: 1897px) {
+  .container-fluid {
+    max-width: 1896px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

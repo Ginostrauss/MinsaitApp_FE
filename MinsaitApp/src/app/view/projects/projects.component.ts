@@ -9,10 +9,10 @@ interface SortingOption {
 
 @Component({
   selector: 'app-results',
-  templateUrl: './results.component.html',
-  styleUrls: ['./results.component.scss']
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class ResultsComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
 
   constructor() {

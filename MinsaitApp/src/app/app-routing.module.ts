@@ -1,13 +1,17 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ResultsComponent} from "./view/results/results.component";
-import {ResultDetailsComponent} from "./view/result-details/result-details.component";
+import {ProjectsComponent} from "./view/projects/projects.component";
+import {ResourcesComponent} from "./view/resources/resources.component";
 import {HomepageComponent} from "./view/homepage/homepage.component";
+import {AllocationsComponent} from "./view/allocations/allocations.component";
 
 const routes: Routes = [
-  { path: 'homepage', component: HomepageComponent },
-  { path: 'result', component: ResultsComponent },
-  { path: 'result-detail', component: ResultDetailsComponent },
+  { path: 'homepage', component: HomepageComponent, children: [
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'resources', component: ResourcesComponent },
+      { path: 'allocations', component: AllocationsComponent },
+    ]},
+
   { path: '', redirectTo: '/homepage', pathMatch: 'full' }
 ];
 

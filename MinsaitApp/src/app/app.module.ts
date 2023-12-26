@@ -6,19 +6,21 @@ import {SharedModule} from "./shared/shared.module";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
 import {HomepageComponent} from './view/homepage/homepage.component';
-import {ResultsComponent} from './view/results/results.component';
-import {ResultDetailsComponent} from './view/result-details/result-details.component';
+import {ProjectsComponent} from './view/projects/projects.component';
+import {ResourcesComponent} from './view/resources/resources.component';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AllocationsComponent } from './view/allocations/allocations.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    ResultsComponent,
-    ResultDetailsComponent,
+    ProjectsComponent,
+    ResourcesComponent,
+    AllocationsComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-result-details',
-  templateUrl: './result-details.component.html',
-  styleUrls: ['./result-details.component.scss']
+  templateUrl: './resources.component.html',
+  styleUrls: ['./resources.component.scss']
 })
-export class ResultDetailsComponent implements OnInit{
+export class ResourcesComponent implements OnInit{
   constructor() { }
 
 
