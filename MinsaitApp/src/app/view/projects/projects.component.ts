@@ -1,5 +1,6 @@
 import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from '@angular/forms';
+import {GenericService} from "../generic.service";
 
 
 interface SortingOption {
@@ -14,12 +15,12 @@ interface SortingOption {
 })
 export class ProjectsComponent implements OnInit {
 
-
-  constructor() {
-
+  typeOfPage: string = "";
+  constructor(private genericService: GenericService) {
   }
 
   ngOnInit(): void {
+    this.genericService.setData("Elenco dei progetti");
   }
 
 }

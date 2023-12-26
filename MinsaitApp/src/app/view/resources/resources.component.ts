@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import {GenericService} from "../generic.service";
 
 @Component({
   selector: 'app-result-details',
@@ -6,13 +7,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./resources.component.scss']
 })
 export class ResourcesComponent implements OnInit{
-  constructor() { }
-
-
-
+  constructor(private genericService: GenericService) {
+  }
 
   ngOnInit(): void {
-
+    this.genericService.setData("Elenco delle risorse");
   }
 
 }
