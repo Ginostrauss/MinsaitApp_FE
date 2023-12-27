@@ -1,5 +1,4 @@
-import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {GenericService} from "../generic.service";
 import {Subscription} from "rxjs";
 

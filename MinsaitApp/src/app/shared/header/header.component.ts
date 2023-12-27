@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit, OnChanges{
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['typeOfPage']) {
-      console.log(changes['typeOfPage'].currentValue);
     }
   }
 }

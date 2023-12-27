@@ -12,7 +12,9 @@ const routes: Routes = [
       { path: 'allocations', component: AllocationsComponent },
     ]},
 
-  { path: '', redirectTo: '/homepage', pathMatch: 'full' }
+  { path: '', redirectTo: '/homepage/projects', pathMatch: 'full' },
+  { path: '**', redirectTo: '/homepage/projects'}
+
 ];
 
 @NgModule({
