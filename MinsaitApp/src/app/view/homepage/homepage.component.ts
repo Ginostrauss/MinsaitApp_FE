@@ -10,6 +10,7 @@ import {Subscription} from "rxjs";
 export class HomepageComponent implements OnInit {
   typeOfPage!: string;
   private subscription!: Subscription;
+  buttonValue!: string;
 
   constructor(private genericService: GenericService,
               private cdRef: ChangeDetectorRef) {
@@ -27,4 +28,7 @@ export class HomepageComponent implements OnInit {
     this.subscription.unsubscribe();
   }
 
+  handleButtonClick(value: string) {
+    this.buttonValue = value;
+  }
 }

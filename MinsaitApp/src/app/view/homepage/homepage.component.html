@@ -1,11 +1,10 @@
-<!-- homepage.component.html -->
 <div class="container-fluid p-0">
   <div class="row no-gutters d-flex align-items-stretch">
     <div class="p-0">
-      <app-navbar></app-navbar> <!-- Navbar Component -->
+      <app-navbar [buttonValue]="buttonValue"></app-navbar>
     </div>
     <div class="col-1 p-0">
-      <app-sidebar></app-sidebar> <!-- Sidebar Component -->
+      <app-sidebar (buttonClicked)="handleButtonClick($event)"></app-sidebar>
     </div>
     <div class="col ps-5">
       <div class="container-fluid ps-4">

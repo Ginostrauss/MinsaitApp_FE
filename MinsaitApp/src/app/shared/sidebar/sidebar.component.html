@@ -2,19 +2,19 @@
   <div class="col ms-1 mb-3 text-white"><h5>MANAGEMENT</h5></div>
   <div class="row row-cols-1 ms-1">
     <div class="col text-white mb-2">
-      <a routerLink="projects" class="text-decoration-none text-white">
+      <a routerLink="projects" class="text-decoration-none text-white" (click)="handleClick('progetti')">
         <img src="../../../assets/project.svg" alt="project" width="25" height="25" class="d-inline-block align-text-center">
         Progetti
       </a>
     </div>
     <div class="col text-white mb-2">
-      <a routerLink="resources" class="text-decoration-none text-white">
+      <a routerLink="resources" class="text-decoration-none text-white" (click)="handleClick('risorse')">
         <img src="../../../assets/resources.svg" alt="resources" width="25" height="25" class="d-inline-block align-text-center">
         Risorse
       </a>
     </div>
     <div class="col text-white mb-2">
-      <a routerLink="allocations" class="text-decoration-none text-white">
+      <a routerLink="allocations" class="text-decoration-none text-white" (click)="handleClick('allocazioni')">
         <img src="../../../assets/allocations.svg" alt="allocations" width="25" height="25" class="d-inline-block align-text-center">
         Allocazioni
       </a>
